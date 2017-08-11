@@ -1,0 +1,18 @@
+@keyframes blink {
+  50% {
+    color: transparent; } }
+
+loading-dots {
+  animation: 1s blink infinite 250ms; }
+  loading-dots::before, loading-dots::after {
+    content: '.';
+    animation: 1s blink infinite; }
+  loading-dots::after {
+    animation-delay: 500ms; }
+
+loading-dots[rgb] {
+  color: green; }
+  loading-dots[rgb]::before {
+    color: red; }
+  loading-dots[rgb]::after {
+    color: blue; }
