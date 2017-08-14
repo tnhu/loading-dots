@@ -17,14 +17,13 @@ loading-dots[rgb]::after {
 loading-dots {
   color: black;
   font-size: 120%;
-  animation: loading-dots-blink 1.4s infinite .2s;
-
+  animation: loading-dots-blink 1.4s infinite .2s both;
 }
 
 loading-dots::before,
 loading-dots::after {
   content: '.';
-  animation: loading-dots-blink 1.4s infinite 0s;
+  animation: loading-dots-blink 1.4s infinite 0s both;
 }
 
 loading-dots::after {

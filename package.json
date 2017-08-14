@@ -1,6 +1,6 @@
 {
   "name": "loading-dots",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A web component for three blinking loading dots",
   "main": "index.js",
   "style": "loading-dots.css",
