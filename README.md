@@ -1,6 +1,8 @@
 ## Loading Dots Web Components
 
-Web component for three blinking dots.
+A web component for three blinking loading dots.
+
+(http://i.imgur.com/XxgLKUs.gif "Screenshot")
 
 ### Install
 

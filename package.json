@@ -1,13 +1,11 @@
 {
   "name": "loading-dots",
-  "version": "1.0.0",
-  "description": "Loading... web component with blinking dots",
+  "version": "1.0.1",
+  "description": "A web component for three blinking loading dots",
   "main": "index.js",
   "style": "loading-dots.css",
-  "scripts": {
-    "build": "node-sass src/*.scss -o ."
-  },
   "keywords": [
+    "dots",
     "loading-dots",
     "loading",
     "loading...",
@@ -15,8 +13,5 @@
     "three dots"
   ],
   "author": "Tan Nhu",
-  "license": "MIT",
-  "devDependencies": {
-    "node-sass": "^4.5.3"
-  }
+  "license": "MIT"
 }

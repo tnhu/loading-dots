@@ -1,18 +1,44 @@
-@keyframes blink {
-  50% {
-    color: transparent; } }
-
-loading-dots {
-  animation: 1s blink infinite 250ms; }
-  loading-dots::before, loading-dots::after {
-    content: '.';
-    animation: 1s blink infinite; }
-  loading-dots::after {
-    animation-delay: 500ms; }
+:root {
+  --color-loading-dots: 0, 0, 0;
+}
 
 loading-dots[rgb] {
-  color: green; }
-  loading-dots[rgb]::before {
-    color: red; }
-  loading-dots[rgb]::after {
-    color: blue; }
+  --color-loading-dots: 0, 255, 0;
+}
+
+loading-dots[rgb]::before {
+  --color-loading-dots: 255, 0, 0;
+}
+
+loading-dots[rgb]::after {
+  --color-loading-dots: 0, 0, 255;
+}
+
+loading-dots {
+  color: black;
+  font-size: 120%;
+  animation: loading-dots-blink 1.4s infinite .2s;
+
+}
+
+loading-dots::before,
+loading-dots::after {
+  content: '.';
+  animation: loading-dots-blink 1.4s infinite 0s;
+}
+
+loading-dots::after {
+  animation-delay: .4s;
+}
+
+@keyframes loading-dots-blink {
+  0% {
+    color: rgba(var(--color-loading-dots), .2);
+  }
+  20% {
+    color: rgba(var(--color-loading-dots),  1);
+  }
+  100% {
+    color: rgba(var(--color-loading-dots), .2);
+  }
+}
