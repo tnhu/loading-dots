@@ -19,7 +19,7 @@ Import in your css:
 Or in your JavaScript (Babel and css-loader required):
 
 ```javascript
-import 'loading-dots'
+import 'loading-dots/loading-dots.css'
 ```
 
 ### Samples
